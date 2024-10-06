@@ -43,6 +43,8 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 
@@ -136,14 +138,7 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-       Overview of the proposed IMRL approach for food acquisition. Given the last k steps of eye-in-hand RGB observations,
-       the system segments the desired food using SAM, extracts features with an encoder (e.g., ResNet-50),
-       and processes them through visual and physical representation modules to learn a joint representation z_vp. A
-       temporal representation module produces z_u to capture dynamics, while the geometric representation module provides
-       bowl fullness l and optimal scooping points (x∗, y∗). All
-       these representations are integrated into a multi-dimensional
-       representation z, which, combined with robot proprioception,
-       is used to generate robot actions through a control module.
+       Overview of the proposed IMRL approach for food acquisition. Given the last k steps of eye-in-hand RGB observations, the system segments the desired food using SAM, extracts features with an encoder (e.g., ResNet-50), and processes them through visual and physical representation modules to learn a joint representation z_vp. A temporal representation module produces z_u to capture dynamics, while the geometric representation module provides bowl fullness l and optimal scooping points (x∗, y∗). All these representations are integrated into a multi-dimensional representation z, which, combined with robot proprioception, is used to generate robot actions through a control module.
       </h2>
     </div>
   </div>
