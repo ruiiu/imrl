@@ -132,11 +132,18 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/IMRL_App.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+       Overview of the proposed IMRL approach for food acquisition. Given the last k steps of eye-in-hand RGB observations,
+       the system segments the desired food using SAM, extracts features with an encoder (e.g., ResNet-50),
+       and processes them through visual and physical representation modules to learn a joint representation z_vp. A
+       temporal representation module produces z_u to capture dynamics, while the geometric representation module provides
+       bowl fullness l and optimal scooping points (x∗, y∗). All
+       these representations are integrated into a multi-dimensional
+       representation z, which, combined with robot proprioception,
+       is used to generate robot actions through a control module.
       </h2>
     </div>
   </div>
